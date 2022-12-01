@@ -1,0 +1,184 @@
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 540px;
+    /* background-color: antiquewhite; */
+    text-align: center;
+
+
+}
+
+.home__img{
+margin-bottom: 1.5rem;
+height: 175px;
+width: 175px;
+
+}
+
+@keyframes home__img-push {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.home__img:hover {
+    animation: home__img-push 0.5s linear 1;
+}
+
+
+
+
+.home__name{
+font-size: var(--h1-font-size);
+font-weight: var(--font-bold);
+margin-bottom: .5rem;
+}
+
+.home__socials{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+.home__social-link{
+    color: #ff5f20;
+    font-size: 1.3rem;
+    transition: .3s ease-in;
+}
+
+.home__social-link:hover{
+    color: hsl(43,100%,68%);
+}
+
+.scroll__down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+    
+}
+
+.home__scroll-name{
+    font-size: var(--small-font-size);
+}
+
+.mouse{
+    border: 1.5px solid #454545;
+    display: block;
+    height: 2rem;
+    width: 1.4rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+@keyframes ani-mouse {
+    0%{
+        top: 30%;
+    }
+    25%{
+        top: 50%;
+    }
+    50% {
+        top: 75%;
+    }
+    75%{
+        top: 50;
+    }
+    100% {
+        top: 30%;
+    }
+}
+.wheel{
+    background-color: #454545;
+    border-radius: 100%;
+    width: .25rem;
+    height: .25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
+
+.shapes{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -9999;
+}
+
+.shape{
+    position: absolute;
+    
+}
+
+
+
+
+
+.s1{
+    left: 2%;
+    top: 10%;
+}
+
+
+.s2 {
+    left: 20%;
+    top: 30%;
+}
+.s3 {
+    left: 35%;
+    top: 80%;
+}
+.s4 {
+    left: 35%;
+    top: 25%;
+}
+.s5 {
+    left: 85%;
+    top: 70%;
+}
+
+.s6 {
+    left: 70%;
+    top: 15%;
+}
+
+.s7 {
+    left: 56%;
+    top: 40%;
+}
+
+.s8 {
+    left: 15%;
+    top: 60%;
+}
+
+.s9 {
+    left: 45%;
+    top: 80%;
+}
+
+.s10 {
+    left: 75%;
+    top: 40%;
+}
+
+.s11 {
+    left: 90%;
+    top: 20%;
+}
